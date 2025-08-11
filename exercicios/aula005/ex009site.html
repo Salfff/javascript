@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="nacao"></input>
+
+    <input type="button" value="verificar" id="verificacao"></input>
+
+    <p id="respost" ></p>
+
+    <script>
+         var botao1 = window.document.getElementById('verificacao')
+         var input1 = window.document.getElementById('nacao')
+         var textoResp = document.getElementById('respost')
+        botao1.addEventListener('click', clicar)
+
+        
+
+        function clicar () {
+            if(input1.value.toUpperCase() == 'BR') {
+                textoResp.innerHTML = 'Brasileiro'
+            } else {
+                textoResp.innerHTML = 'estrangeiro'
+
+                alert(typeof input1)
+            }
+        }
+       
+
+        
+    </script>
+</body>
+</html>
