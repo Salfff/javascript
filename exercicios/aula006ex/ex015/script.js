@@ -1,15 +1,28 @@
 function verificar() {
+
+
     var data = new Date()
+
     var ano = data.getFullYear()
+
     var fAno = document.getElementById('txtano')
+
     var res = document.getElementById('res')
 
+
     if(fAno.value.length == 0 || fAno.value > ano || fAno.value < 1900) {
+
         window.alert('Insira um valor válido')
+
     } else {
+
+
         var fsex = document.getElementsByName('radsex')
+
         var idade = ano - fAno.value
+
         var genero = '';
+        
         var img = document.createElement('img')
         img.setAttribute('id', 'foto')
         if(fsex[0].checked) {
