@@ -31,7 +31,6 @@ function gerarTab() {
             option.text = ` ${cont} x ${num} = ${soma}`;
             select.appendChild(option)
             
-            option.setAttribute()
         }
 
         
