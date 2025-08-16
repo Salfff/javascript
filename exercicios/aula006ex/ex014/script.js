@@ -4,7 +4,8 @@ var img = window.document.getElementById('img')
 var date = new Date()
 var hora = date.getHours()
 msg.innerHTML = `Agora são ${hora} horas`
- 
+
+
 if(hora >=0 && hora < 12) {
     //Bom dia
     img.src = 'foto-manha.png';
